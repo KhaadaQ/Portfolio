@@ -5,25 +5,31 @@ import '../../index.css'
 const Skills = () => {
     return (
         <section id="skills">
-            <h2>Skills</h2>
-            <div className="skills-container">
+            <h2>Habilidades</h2>
+            <div className="skills-grid">
                 <div className="skill">
-                    <FaHtml5 className="icon" style={{ color: '#E34F26' }} title="HTML5" />
+                    <FaHtml5 className="icon html" title="HTML5" />
+                    <p>HTML5</p>
                 </div>
                 <div className="skill">
-                    <FaCss3Alt className="icon" style={{ color: '#264DE4' }} title="CSS3" />
+                    <FaCss3Alt className="icon css" title="CSS3" />
+                    <p>CSS3</p>
                 </div>
                 <div className="skill">
-                    <FaJsSquare className="icon" style={{ color: '#F7DF1E' }} title="JavaScript" />
+                    <FaJsSquare className="icon js" title="JavaScript" />
+                    <p>JavaScript</p>
                 </div>
                 <div className="skill">
-                    <FaReact className="icon" style={{ color: '#61DAFB' }} title="React" />
+                    <FaReact className="icon react" title="React" />
+                    <p>React</p>
                 </div>
                 <div className="skill">
-                    <FaNodeJs className="icon" style={{ color: '#68A063' }} title="Node.js" />
+                    <FaNodeJs className="icon node" title="Node.js" />
+                    <p>Node.js</p>
                 </div>
                 <div className="skill">
-                    <FaGithub className="icon" style={{ color: '#181717' }} title="GitHub" />
+                    <FaGithub className="icon github" title="GitHub" />
+                    <p>GitHub</p>
                 </div>
             </div>
         </section>
