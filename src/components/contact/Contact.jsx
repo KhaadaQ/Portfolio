@@ -3,8 +3,8 @@ import React from 'react'
 const Contact = () => {
     return (
         <section id="contact">
-            <h2>Contacto</h2>
-            <p>Puedes contactarme en: <a href="mailto:tucorreo@example.com">tucorreo@example.com</a></p>
+            <h2>Contact Me</h2>
+            <p>You can email me at: <a href="mailto:khaadaqq@gmail.com">khaadaqq@gmail.com</a></p>
         </section>
     )
 }

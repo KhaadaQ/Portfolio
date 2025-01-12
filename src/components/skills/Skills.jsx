@@ -5,7 +5,7 @@ import '../../index.css'
 const Skills = () => {
     return (
         <section id="skills">
-            <h2>Habilidades</h2>
+            <h2>Skills</h2>
             <div className="skills-container">
                 <div className="skill">
                     <FaHtml5 className="icon" style={{ color: '#E34F26' }} title="HTML5" />
