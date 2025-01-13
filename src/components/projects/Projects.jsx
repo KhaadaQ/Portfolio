@@ -1,43 +1,52 @@
 import React from 'react'
 import '../../App.css'
 import '../../index.css'
+import screenshot from '../../assets/filmaxScreen.png'
 
 const Projects = () => {
-    const projectData = [
+    const projects = [
         {
             id: 1,
-            title: 'E-Commerce Website',
-            description: 'Un sitio web de compras con React y Node.js.',
-            image: 'https://source.unsplash.com/random/300x200?technology',
-            link: '#'
+            title: 'Film API',
+            description: 'Search for films, their synopsis and more using filters',
+            image: screenshot,
+            githubLink: 'https://github.com/KhaadaQ/Movie-API.git'
         },
         {
             id: 2,
-            title: 'Aplicación de Clima',
-            description: 'Aplicación interactiva que muestra el clima en tiempo real.',
-            image: 'https://source.unsplash.com/random/300x200?weather',
-            link: '#'
+            title: 'Newcoming Project',
+            description: 'Coming soon! Some new amazing code is on the way, stay tuned!',
+            image: "https://picsum.photos/700",
+            githubLink: '#'
         },
         {
             id: 3,
-            title: 'Gestor de Tareas',
-            description: 'Una aplicación para gestionar tareas diarias con React.',
-            image: 'https://source.unsplash.com/random/300x200?productivity',
-            link: '#'
+            title: 'Upcoming Surprise',
+            description: 'Another amazing app will be revealed soon, watch out!',
+            image: 'https://picsum.photos/701',
+            githubLink: '#'
         }
     ];
 
     return (
         <section id="projects">
-            <h2>Proyectos Destacados</h2>
+            <h2>Featured Projects</h2>
             <div className="projects-container">
-                {projectData.map((project) => (
+                {projects.map((project) => (
                     <div key={project.id} className="project-card">
-                        <img src={project.image} alt={project.title} className="project-image" />
+                        <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                            <img src={project.image} alt={project.title} className="project-image" />
+                        </a>
                         <div className="project-info">
                             <h3>{project.title}</h3>
                             <p>{project.description}</p>
-                            <a href={project.link} target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+                            {project.githubLink !== "#" ? (
+                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                    View
+                                </a>
+                            ) : (
+                                <p className="coming-soon">Coming soon!</p>
+                            )}
                         </div>
                     </div>
                 ))}

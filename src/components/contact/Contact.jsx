@@ -11,7 +11,7 @@ const Contact = () => {
 
     return (
         <section id="contact">
-            <h2>Contacto</h2>
+            <h2>Contact me</h2>
             {/* Formulario conectado a FormSubmit con captcha desactivado y redirección */}
             <form
                 className="contact-form"
@@ -21,7 +21,7 @@ const Contact = () => {
                 <input
                     type="text"
                     name="name"
-                    placeholder="Tu Nombre"
+                    placeholder="Your name"
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -29,14 +29,14 @@ const Contact = () => {
                 <input
                     type="email"
                     name="email"
-                    placeholder="Tu Correo Electrónico"
+                    placeholder="Your email"
                     value={formData.email}
                     onChange={handleChange}
                     required
                 />
                 <textarea
                     name="message"
-                    placeholder="Tu Mensaje"
+                    placeholder="Your message"
                     value={formData.message}
                     onChange={handleChange}
                     required
@@ -44,7 +44,7 @@ const Contact = () => {
                 {/* Desactivar CAPTCHA y redirigir a página de agradecimiento */}
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_next" value="http://localhost:5173/thank-you" />
-                <button type="submit">Enviar Mensaje</button>
+                <button type="submit">Send message</button>
             </form>
         </section>
     );
