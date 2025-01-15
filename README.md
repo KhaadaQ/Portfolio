@@ -1,5 +1,7 @@
 # React + Vite
 
+This project is a reflection of my abilities as a web developer. Run npm install and npm run dev after cloning this repository and you will access a full-componetized react + vite portfolio of my making. 
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
