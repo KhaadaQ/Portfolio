@@ -7,6 +7,7 @@ html {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  scroll-padding-top: 515px;
   background: linear-gradient(135deg, #1e293b, #4a5568);
   color: white;
   overflow-x: hidden;
@@ -61,25 +62,46 @@ h2 {
 }
 
 /* Estilo del header */
+/* Menú de navegación fijo en la parte superior */
 header {
-  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que esté siempre por encima del resto del contenido */
+  background: rgba(0, 0, 0, 0.9);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 nav a {
-  margin: 0 15px;
   font-size: 18px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
 }
 
 section {
-  padding: 80px 20px;
-  margin-top: 20px;
+  padding: 3em;
+  margin-top: 30em;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
+  margin-bottom: 40em;
 }
 
 /* Animación sutil al hacer hover en las secciones */
@@ -290,6 +312,7 @@ section:hover {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 40px;
+  
 }
 
 .project-card {
@@ -354,3 +377,4 @@ section:hover {
   font-weight: bold;
   color: #ffa500;
 }
+
